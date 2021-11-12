@@ -334,7 +334,7 @@ h5 span {
     justify-content: center;
     align-items: center;
     gap: 0.5em;
-    padding: 1em 2em;
+    padding: 1em;
     color: var(--white);
     background-color: var(--twitterBlue);
     font-weight: bold;
@@ -369,7 +369,180 @@ h5 span {
 
 @media only screen and (min-width: 768px) {
 
+    .hero {
+        padding: 4em 3em;
+    }
 
+    #logo {
+        font-size: 1.5rem;
+    }
+    
+    .hero .nav {
+        display: flex;
+        align-items: center;
+        gap: 1.75em;
+    }
+
+    .hero .nav a {
+        color: var(--gray);
+        font-size: 1.3rem;
+    }
+
+    .twitter-sign-in a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5em;
+        padding: 1em 1.5em;
+        color: var(--white) !important;
+        background-color: var(--twitterBlue);
+        font-weight: bold;
+        font-size: 1.25rem !important;
+        border-radius: 5px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 0.25em;
+    }
+    
+    p {
+        font-size: 1.35rem;
+    }
+
+    .twitter-learn-more {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .twitter-learn-more a {
+        padding: 1.15em 1.75em;
+        font-size: 1.25rem;
+        gap: 0.75em;
+        margin-bottom: 2em;
+    }    
+
+    .twitter-learn-more a > img {
+        width: 30px;
+    }
+
+    .learn-more {
+        text-align: left;
+        font-size: 1.35rem;
+        gap: 0.5em;
+        margin-bottom: 2em;
+    }
+    
+    .learn-more img {
+        width: 17.5px;
+    }
+
+    .hero-text p {
+        max-width: 600px;
+    }
+
+    .smarter {
+        padding: 6em 3em 4em 3em;
+    }
+    
+    h2 {
+        font-size: 2.65rem;
+        max-width: 500px;
+    }
+
+    .grid-item {
+        padding: 2em;
+        margin-bottom: 1.75em;
+    }
+    
+    .grid-item img {
+        width: 50px;
+        margin-bottom: 1em;
+    }
+    
+    h3 {
+        font-size: 1.35rem;
+    }
+    
+    .customers {
+        padding: 3.5em 3em 4em 3em;
+    }
+
+    .customers h2 {
+        max-width: 100%;
+    }
+
+    .price {
+        padding: 5em 7.5em;
+    }
+    
+    .price h1 {
+        font-size: 2.55rem;
+    }
+    
+    .price p {
+        margin-bottom: 4em;
+    }
+
+    .monthly {
+        padding: 3em 3em;
+    }
+    
+    h4 {
+        font-size: 1.85rem;
+        padding-left: 0;
+        margin-bottom: 0.1em;
+    }
+    
+    h5 {
+        font-size: 1.85rem;
+        padding-left: 0;
+    }
+    
+    h5 span {
+        font-size: 4.15rem;
+    }
+    
+    .checkmarks {
+        padding: 1em 0 0 0;
+        margin: 0 auto 1.25em auto;
+        max-width: 100%;
+    }
+    
+    .check img {
+        width: 30px;
+    }
+
+    .check p {
+        margin-bottom: 1em;
+    }
+    
+    .monthly a {
+        gap: 0.75em;
+        font-size: 1.25rem;
+    }
+
+    .monthly a img {
+        width: 30px;
+    }
+
+    .footer {
+        padding: 2em 3em;
+    }
+    
+    .footer img {
+        width: 30px;
+    }
+
+    .footer a {
+        font-size: 1.5rem;
+    }
 
 }
 
