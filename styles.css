@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --logo: #3180f5;
+    --twitterBlue: #1da1f2;
+    --textBlue: #1f7898;
+    --lightBlue: #d7f5f5;
+    --yellow: #ffad23;
+    --tan: #fbf8f3;
+    --gray: #737373;
+    --black: #000;
+    --white: #fff;
+    --Inter: 'Inter', sans-serif;
+}
+
+::selection {
+    color: var(--blue);
+    background-color: var(--white);
+}
+
+body {
+    font-family: var(--Inter);
+    min-height: 100vh;
+    min-width: 375px;
+    max-width: 1980px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero {
+    padding: 2.75em 1.5em;
+    background-color: var(--tan);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 2.5em;
+}
+
+#logo {
+    color: var(--logo);
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.nav {
+    display: none;
+    /* Come back to this to do the hamburger menu */
+}
+
+.hero-main > img {
+    margin-bottom: 3em;
+}
+
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 0.35em;
+}
+
+p {
+    color: var(--gray);
+    font-size: 1.15rem;
+    line-height: 1.65;
+    margin-bottom: 1em;
+}
+
+.twitter-learn-more a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 3em;
+    color: var(--white);
+    background-color: var(--twitterBlue);
+    font-weight: bold;
+    font-size: 1.15rem;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+.twitter-learn-more a > img {
+    width: 25px;
+}
+
+.learn-more {
+    color: var(--textBlue);
+    text-align: center;
+    font-size: 1.15rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25em;
+    margin-bottom: 2em;
+}
+
+.learn-more img {
+    width: 15px;
+    filter: invert(37%) sepia(60%) saturate(542%) hue-rotate(150deg) brightness(96%) contrast(96%);
+}
+
+.avatars {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+#user8 {
+    transform: translateX(-20px);
+}
+
+#user7 {
+    transform: translateX(-40px);
+}
+
+#user6 {
+    transform: translateX(-60px);
+}
+
+#user5 {
+    transform: translateX(-80px);
+}
+
+#user4 {
+    transform: translateX(-100px);
+}
+
+#user3 {
+    transform: translateX(-120px);
+}
+
+#user2 {
+    transform: translateX(-140px);
+}
+
+#user1 {
+    transform: translateX(-160px);
+}
+
+.hero-text p span {
+    color: var(--textBlue);
+    font-weight: bold;
+}
+
+.hero-text p:last-child {
+    margin-bottom: 0;
+}
+
+.smarter {
+    padding: 5.5em 1.5em 3em 1.5em;
+}
+
+h2 {
+    font-size: 2.275rem;
+    margin-bottom: 1em;
+}
+
+.grid-item {
+    border: 1px solid hsla(0, 0%, 49%, 0.35);
+    border-radius: 5px;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.grid-item img {
+    width: 40px;
+    margin-bottom: 1em;
+}
+
+h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75em;
+}
+
+.grid-item p {
+    margin: 0;
+}
+
+.customers {
+    padding: 3.5em 1.5em 2em 1.5em;
+    background-color: var(--lightBlue);
+}
+
+.customers h2 {
+    margin-bottom: 1.5em;
+}
+
+.profile {
+    box-shadow: rgba(99, 99, 99, 0.05) 0px 2px 5px 0px;
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 1.5em 1.5em 2em 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 0.75em;
+}
+
+.head img:first-child {
+    width: 65px;
+}
+
+.name h3 {
+    margin-bottom: 0.1em;
+}
+
+.name span {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+.head img:last-child {
+    margin-left: auto;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.like span {
+    color: var(--gray);
+    font-size: 1.15rem;
+}
+
+.bottom span {
+    color: var(--gray);
+    font-size: 1.15rem;
+}
+
+.price {
+    padding: 5em 1.5em;
+}
+
+.price h1 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.price p {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.monthly {
+    background-color: var(--tan);
+    border-radius: 10px;
+    border: 1px solid var(--yellow);
+    padding: 2em 1em;
+}
+
+h4 {
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-left: 0.5em;
+}
+
+h5 {
+    color: var(--gray);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+}
+
+h5 span {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.checkmarks {
+    border-top: 1px solid hsla(0, 0%, 49%, 0.35);
+    border-bottom: 1px solid hsla(0, 0%, 49%, 0.35);
+    padding: 1em 0 0 0;
+    margin: 0 auto 1.5em auto;
+    max-width: 90%;
+}
+
+.check {
+    display: flex;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.check p {
+    text-align: left;
+    margin-bottom: 1em;
+    padding: 0;
+}
+
+.monthly a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 2em;
+    color: var(--white);
+    background-color: var(--twitterBlue);
+    font-weight: bold;
+    font-size: 1.15rem;
+    border-radius: 5px;
+}
+
+.footer {
+    background-color: var(--lightBlue);
+    padding: 1.5em 1.5em 2em 1.5em;
+}
+
+.footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+
+.footer .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.footer a {
+    color: var(--black);
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+    
+}
