@@ -16,7 +16,7 @@
     <div class="hero">
       <nav>
         <span id="logo">Chirp.</span>
-        <ul class="nav">
+        <ul class="mobile-menu nav">
           <li><a href="">Home</a></li>
           <li><a href="">Pricing</a></li>
           <li><a href="">FAQ</a></li>
@@ -27,7 +27,7 @@
             </a>
           </li>
         </ul>
-        <img src="images/Hamburger Menu.svg" alt="hamburger menu" id="menu">
+        <img src="images/Hamburger Menu.svg" alt="hamburger menu" id="menu" onclick="toggle()" style="cursor: pointer;">
       </nav>
       <div class="hero-main">
         <img src="images/Hero Image (Desktop View).png" alt="twitter analytics">
@@ -180,6 +180,26 @@
       </nav>
     </div>
   </div>
+
+  <script>
+    
+    var menu = document.querySelector(".mobile-menu");
+
+    function toggle() {
+        if (menu.style.display === "flex") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+      }
+
+    window.onresize = function() {
+        if(window.innerWidth >= 768) {
+            menu.style.display = "flex";
+        }
+    }
+
+  </script>
 
 </body>
 </html>

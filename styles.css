@@ -68,9 +68,55 @@ nav {
     font-size: 1.3rem;
 }
 
-.nav {
-    display: none;
-    /* Come back to this to do the hamburger menu */
+.mobile-menu {
+    display: none; /* < Hamburger menu toggle */
+    flex-direction: column;
+    position: absolute;
+    top: 6em;
+    left: 2em;
+    right: 2em;
+    height: 325px;
+    background-color: var(--white);
+    text-align: center;
+    padding: 3em 2em;
+    z-index: 5;
+    border-radius: 15px;
+    margin: 0 auto;
+    transition: all 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    min-width: 311px;
+}
+
+.mobile-menu li {
+    margin-bottom: 2em;
+}
+
+.hero .nav a {
+    color: var(--gray);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.hero .nav a:hover {
+    color: var(--logo);
+}
+
+.twitter-sign-in a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 1.5em;
+    color: var(--white) !important;
+    background-color: var(--twitterBlue);
+    font-weight: bold;
+    font-size: 1.25rem !important;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.twitter-sign-in a:hover {
+    transform: scale(105%);
 }
 
 .hero-main > img {
@@ -377,38 +423,30 @@ h5 span {
         font-size: 1.5rem;
     }
     
-    .hero .nav {
+    .mobile-menu {
         display: flex;
+        flex-direction: row;
         align-items: center;
         gap: 1.75em;
+        position: static;
+        top: initial;
+        left: initial;
+        right: initial;
+        height: initial;
+        background-color: transparent;
+        text-align: left;
+        padding: 0;
+        border-radius: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+    
+    .mobile-menu li {
+        margin-bottom: 0;
     }
 
     .hero .nav a {
-        color: var(--gray);
         font-size: 1.3rem;
-        transition: color 0.3s;
-    }
-
-    .hero .nav a:hover {
-        color: var(--logo);
-    }
-
-    .twitter-sign-in a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5em;
-        padding: 1em 1.5em;
-        color: var(--white) !important;
-        background-color: var(--twitterBlue);
-        font-weight: bold;
-        font-size: 1.25rem !important;
-        border-radius: 5px;
-        transition: transform 0.3s;
-    }
-
-    .twitter-sign-in a:hover {
-        transform: scale(105%);
     }
 
     #menu {
